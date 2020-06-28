@@ -22,8 +22,8 @@
                 nativeObject = YAML.parse(json);
                 console.log('数据是:', nativeObject);
             },
-            error: function () {
-                alert('fail');
+            error: function (e) {
+                console.log('fail:', e);
             }
         });
     });
